@@ -21,7 +21,7 @@
                                 <mat-label>Customer Number</mat-label>
                                 <input class="input-full-width" matInput formControlName="customer_number"
                                     autocomplete="off" (keydown.enter)="$event.preventDefault()"
-                                    (keyup.enter)="fetchCustomerData()">
+                                    (keyup)="fetchCustomerData()" maxlength="2">
 
                             </mat-form-field>
                         </div>

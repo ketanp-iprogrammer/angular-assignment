@@ -1,7 +1,15 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import '~ngx-toastr/toastr';
 
-
+body{
+    font-family: 'Roboto', sans-serif;
+}
+a:focus,
+input:focus,
+button:focus{
+    outline: 0px;
+   
+}
 .main-background > .main-section{ padding-top: 10px; }
 
 

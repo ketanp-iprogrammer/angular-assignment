@@ -2,9 +2,7 @@
 .form-field{
     margin-top: 7%;
 }
-input, textarea, h1, mat-label, mat-raised-button, p{
-    font-family: 'eurostileregular' !important;
-  }
+
 
   .row {
       margin-right: 0;
@@ -72,6 +70,8 @@ input, textarea, h1, mat-label, mat-raised-button, p{
   
   .submit-btn{
     margin-left: 69%;
+    position: relative;
+    z-index: 10;
   }
 
   .reset{
