@@ -10,6 +10,6 @@ button:focus{
     outline: 0px;
    
 }
-.main-background > .main-section{ padding-top: 10px; }
+.main-background > .main-section{ padding-top: 10px; padding-bottom: 40px}
 
 

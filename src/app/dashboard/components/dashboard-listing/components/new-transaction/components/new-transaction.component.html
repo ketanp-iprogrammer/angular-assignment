@@ -1,7 +1,7 @@
 <div class="main-background form-class">
     <section class="main-section ">
         <div class="container form-container">
-            <div class="row form-header">
+            <div class="form-header">
                 <h5 class="title"> Transaction Details </h5>
             </div>
             <hr>
@@ -107,19 +107,20 @@
                         </div>
 
                     </div>
-                    <div class="row submit-btn">
-                        <button type="submit" class="submit-btn-form" (click)="submitTransactionDetails()">
-                            Submit
-                        </button>
-                        <button type="submit" class="submit-btn-form reset" (click)="reset()">
-                            Reset
-                        </button>
-
-                    </div>
-                    <div class="backBtn">
+                    
+                    <div class="backBtn btn-container">
                         <button type="submit" class="submit-btn-form reset" (click)="back()">
                             Back
                         </button>
+                        <div class="submit-btn">
+                            <button type="submit" class="submit-btn-form mr-2" (click)="submitTransactionDetails()">
+                                Submit
+                            </button>
+                            <button type="submit" class="submit-btn-form reset" (click)="reset()">
+                                Reset
+                            </button>
+    
+                        </div>
                     </div>
 
                 </div>

@@ -4,10 +4,7 @@
 }
 
 
-  .row {
-      margin-right: 0;
-      margin-left: 0;
-  }
+ 
 
   .inline-height{
     margin-top: -5%
@@ -69,17 +66,20 @@
   }
   
   .submit-btn{
-    margin-left: 69%;
     position: relative;
     z-index: 10;
   }
-
-  .reset{
-      margin-left: 4%
-  }
-.backBtn{
-    margin-top: -5%;
+.btn-container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }
+.submit-btn{
+  display: flex;
+
+}
+ 
+
   :host ::ng-deep .mat-form-field-prefix {
       position: unset;
   }

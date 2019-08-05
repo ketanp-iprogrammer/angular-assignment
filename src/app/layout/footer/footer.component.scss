@@ -1,5 +1,5 @@
 .footer-section{
-    padding: 25px 15px;
+    padding: 10px 15px;
     text-align: center;
     box-shadow: 0 0 2px #ccc;
     background: #fff;
@@ -10,5 +10,11 @@
     text-align: center;
     width: 100%;
     z-index: 99;
+
+    p{
+      margin: 0;
+    }
    
   }
+
+  
