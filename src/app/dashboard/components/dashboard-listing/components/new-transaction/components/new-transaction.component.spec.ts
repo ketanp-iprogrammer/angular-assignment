@@ -61,7 +61,7 @@ fdescribe('NewTransactionComponent', () => {
   it('customer_number field validity', () => {
     let errors = {};
     let customer_number = component.objTransaction.controls['customer_number'];
-    customer_number.setValue("456");
+    customer_number.setValue("45");
     errors = customer_number.errors || {};
     expect(customer_number.valid).toBeTruthy();
   });
