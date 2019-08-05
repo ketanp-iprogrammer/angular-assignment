@@ -35,6 +35,10 @@ Note : This project is done in latest Angular Version i.e Angular 8
 
 9. Also for View-All-Transaction API, I have created on my own using online REST API Provider, as the output which I want is not      there online.
 
+10. As per the assignment, I have made only two fields required in new transaction form. 
+
+11. I have applied maxlength of 2 to customer number filed in new transaction form.
+
 * Source For Online REST API's : 
 
 1. Login POST API : 
