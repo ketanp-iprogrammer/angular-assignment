@@ -34,13 +34,14 @@ describe('LoginComponent', () => {
 
   it('email field validity', () => {
     let errors = {};
-    // username field is valid or not
+    // email field is valid or not
     let email = component.loginForm.controls['email'];
     expect(email.valid).toBeFalsy();
 
-    // username field is required
+    // email field is required
     errors = email.errors || {};
     expect(errors['required']).toBeTruthy();
+    expect(errors['email']).toBeFalsy();
   });
 
   it('password field validity', () => {
