@@ -38,8 +38,11 @@
         </div>
 
         <div class="container-login100-form-btn">
-          <button type="submit" class="login100-form-btn" (click)="login()">
+          <button [hidden]="loader" type="submit" class="login100-form-btn" (click)="login()">
             Login
+          </button>
+          <button *ngIf="loader" class="login100-form-btn">
+            <i class="loader-forgot"></i>Loading
           </button>
         </div>
 

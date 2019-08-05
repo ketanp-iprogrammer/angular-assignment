@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   loginForm: FormGroup;
   submitted = false;
   releaseAuthData: Subscription;
-
+  loader : boolean
   constructor(private formBuilder: FormBuilder, private router: Router, private authservice: AuthService,
     private toastr : ToastrService) { }
 
@@ -37,6 +37,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   get loginFormData() { return this.loginForm.controls; }
 
   login() {
+    this.loader = true;
     this.submitted = true;
     if (this.loginForm.invalid) {
       return;
@@ -47,6 +48,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     } 
     this.releaseAuthData = this.authservice.login(objParams).subscribe(data => {
       if(data && data.token){
+        this.loader = false;
         localStorage.setItem('token',data.token);
         this.toastr.success("Login Successfully!")
         this.router.navigate(['dashboard'])

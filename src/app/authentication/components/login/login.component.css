@@ -33,6 +33,17 @@ label {
   margin: 0;
 }
 
+.loader-forgot{
+  background: url(../../../../assets/images/forgot.gif) 0 0 no-repeat;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-size: 100%;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+
 /*---------------------------------------------*/
 button {
 	outline: none !important;
