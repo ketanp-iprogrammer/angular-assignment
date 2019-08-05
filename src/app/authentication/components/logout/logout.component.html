@@ -1,0 +1,18 @@
+<div class="logoutConfirm">
+    <div mat-dialog-title class="title">
+        <h2>Logout </h2>
+    </div>
+
+    <div mat-dialog-content class="content">
+        <p> Are you sure you want to logout?</p>
+    </div>
+
+    <div mat-dialog-actions class="actions">
+        <button type="submit" class="submit-btn-form reset" (click)="onYesClick()">
+            Yes
+        </button>
+        <button type="submit" class="submit-btn-form-No reset" mat-button (click)="onNoClick()">
+            No
+        </button>
+    </div>
+</div>

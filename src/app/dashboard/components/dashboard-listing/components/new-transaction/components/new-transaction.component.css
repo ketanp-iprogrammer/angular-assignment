@@ -1,0 +1,85 @@
+
+.form-field{
+    margin-top: 7%;
+}
+input, textarea, h1, mat-label, mat-raised-button, p{
+    font-family: 'eurostileregular' !important;
+  }
+
+  .row {
+      margin-right: 0;
+      margin-left: 0;
+  }
+
+  .inline-height{
+    margin-top: -5%
+  }
+
+.input-full-width {
+    width: 100%;
+    color: black
+  }
+
+  .form-container {
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+  
+}
+.form-class{
+    margin-top : 5%;
+}
+
+.form-header{
+  
+  padding-top: 10px;
+
+  font-size: 18px;
+  
+  /* border-bottom: 1px solid; */
+
+  position: relative;
+}
+
+.submit-btn-form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 160px;
+    height: 50px;
+    background-color: #57b846;
+    border-radius: 25px;
+
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+  
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    border: antiquewhite;
+  }
+  
+  .submit-btn-form:hover {
+    background-color: #333333;
+  }
+  
+  .submit-btn{
+    margin-left: 69%;
+  }
+
+  .reset{
+      margin-left: 4%
+  }
+.backBtn{
+    margin-top: -5%;
+}
+  :host ::ng-deep .mat-form-field-prefix {
+      position: unset;
+  }

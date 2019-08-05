@@ -1,0 +1,85 @@
+body.adminDashboardHideScroll {
+    height: inherit !important;
+}
+.adminDashboardHideScroll {
+    height: inherit !important;
+}
+body{
+    margin-top:20px;
+    background:#FAFAFA;
+}
+
+.main-background{
+    margin-top : 9%
+}
+.order-card {
+    color: #000;
+    height: 200px;
+}
+.pointerClass{
+    cursor: pointer;
+}
+
+.bg-c-purple {
+    background: linear-gradient(to right, #d265da,#6705ad);
+}
+
+.bg-c-blue {
+    /* background: linear-gradient(to right, #8e8a8b, #e41c39); */
+    background: #fff;
+    box-shadow: 0px 1px 4px #bdbdbd;
+    border: 0px !important;
+}
+
+
+.card {
+    border-radius: 5px;
+    /* -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+    box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16); */
+    border: 1px solid #cccccc;
+    margin-bottom: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.card h1{
+    color: #e41c39;
+    font-weight: bold;
+}
+
+.card .card-block {
+    padding: 25px;
+}
+
+.order-card i {
+    font-size: 26px;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+.m-t-8{
+    margin-top: 8%;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  .progress {
+    height: 8px;
+    margin-top: 6%;
+    background-color: #cccccc;
+  }
+
+  .background-icon{
+    float: right;
+    color: #fffdfd4d;
+    font-size: 100px !important;
+    margin-top: -15px;
+  }

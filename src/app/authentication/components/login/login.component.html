@@ -1,0 +1,46 @@
+<div class="limiter">
+  <div class="container-login100">
+    <div class="wrap-login100">
+      <div class="login100-form-title" style="background-image: url(assets/images/bg-01.jpg);">
+        <span class="login100-form-title-1">
+          Log In
+        </span>
+      </div>
+
+      <form [formGroup]="loginForm" class="login100-form validate-form">
+        
+          <div class="wrap-input100 validate-input m-b-26">
+            <span class="label-input100">Email</span>
+            <input class="input100" type="text" formControlName="email" placeholder="Enter Email">
+
+            <div *ngIf="submitted && loginFormData.email.errors" class="invalid-login">
+                <div *ngIf="loginFormData.email.errors.required">Email Is Required</div>
+                <div *ngIf="loginFormData.email.errors.email">Email must be a valid email address</div>
+              </div>
+
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input m-b-18">
+            <span class="label-input100">Password</span>
+            <input class="input100" minlength="8" type="password" formControlName="password"
+              placeholder="Enter password">
+            <div *ngIf="submitted && loginFormData.password.errors" class="invalid-login">
+              <div *ngIf="loginFormData.password.errors.required">Password is required</div>
+              <div *ngIf="loginFormData.password.errors?.minlength">
+                Password must be at least 8 characters long.
+              </div>
+            </div>
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="container-login100-form-btn">
+            <button type="submit" class="login100-form-btn" (click)="login()">
+              Login
+            </button>
+          </div>
+       
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.footer-section{
+    padding: 25px 15px;
+    text-align: center;
+    box-shadow: 0 0 2px #ccc;
+    background: #fff;
+    font-size: 14px;
+
+    position: fixed; /* add */
+    bottom: 0px;  /* add */
+    text-align: center;
+    width: 100%;
+    z-index: 99;
+   
+  }
