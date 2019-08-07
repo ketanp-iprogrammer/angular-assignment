@@ -19,7 +19,13 @@ Note : This project is done in latest Angular Version i.e Angular 8
 
 1. I have covered and solve all the points mention in the assignment.
 
-2. I have used API for login, here I have intensionally hard-coded email address in API request as it is required by online REST API so that in response, it will send me a token.
+2. I have used API for login, Credentials are :
+                    {
+                      "email": "eve.holt@reqres.in",
+                       "password": "cityslicka"
+                        } 
+
+It will login only when you entered the above mention email on screen, so that it will return the token .
 
 3. I have also used Auth Guard to protect the routes.
 
@@ -38,6 +44,12 @@ Note : This project is done in latest Angular Version i.e Angular 8
 10. As per the assignment, I have made only two fields required in new transaction form. 
 
 11. I have applied maxlength of 2 to customer number filed in new transaction form.
+
+13. Also For customer number field in New Transaction Form , you can enter customer number as : 
+     i) 23421 ii) 23422 iii) 23423
+     
+     All this json objects are available in customer.json file.
+     If you entered anyone of the above customer number then only, it will show you its respective fields
 
 * Source For Online REST API's : 
 
