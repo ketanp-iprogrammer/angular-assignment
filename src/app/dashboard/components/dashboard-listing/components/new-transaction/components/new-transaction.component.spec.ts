@@ -9,7 +9,7 @@ import { ToastrModule, ToastrService } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule, MatSelectModule, MatInputModule } from '@angular/material';
 
-fdescribe('NewTransactionComponent', () => {
+describe('NewTransactionComponent', () => {
   let component: NewTransactionComponent;
   let fixture: ComponentFixture<NewTransactionComponent>;
 
@@ -126,6 +126,7 @@ fdescribe('NewTransactionComponent', () => {
     beneficiary_accno.setValue("343434234");
     errors = beneficiary_accno.errors || {};
     expect(beneficiary_accno.valid).toBeTruthy();
+    expect(errors['numberOnly']).toBeFalsy();
   });
 
   it('payment_details field validity', () => {

@@ -24,10 +24,11 @@ export class ViewAllTransactionsComponent implements OnInit {
 */
   ngOnInit() {
     this.showSpinner = true;
-    this.transactionInfo$ = this.viewTransactionService.getAllTransactionDetails();
-    if (Object.keys(this.transactionInfo$).length > 0) {
-      this.showSpinner = false
-    }
+      this.transactionInfo$ = this.viewTransactionService.getAllTransactionDetails();
+      if (Object.keys(this.transactionInfo$).length > 0) {
+        this.showSpinner = false
+      }
+   
   }
 
 }

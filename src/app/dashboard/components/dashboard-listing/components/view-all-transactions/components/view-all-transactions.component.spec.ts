@@ -1,6 +1,13 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ViewAllTransactionsComponent } from './view-all-transactions.component';
+import { RouterModule } from '@angular/router';
+import { RouterTestingModule } from '@angular/router/testing';
+import { ToastrModule, ToastrService } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatFormFieldModule, MatSelectModule, MatInputModule } from '@angular/material';
+import {MatCardModule} from '@angular/material/card';
+import { HttpClient, HttpHandler } from '@angular/common/http';
 
 describe('ViewAllTransactionsComponent', () => {
   let component: ViewAllTransactionsComponent;
@@ -8,7 +15,21 @@ describe('ViewAllTransactionsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ViewAllTransactionsComponent ]
+      imports: [
+        RouterModule,
+        RouterTestingModule,
+        ToastrModule.forRoot({}),
+        BrowserAnimationsModule,
+        MatFormFieldModule,
+        MatSelectModule,
+        MatInputModule,
+        MatCardModule
+      ],
+      declarations: [ ViewAllTransactionsComponent ],
+      providers: [
+        HttpClient,
+        HttpHandler,
+      ],
     })
     .compileComponents();
   }));
