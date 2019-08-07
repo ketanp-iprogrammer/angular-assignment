@@ -14,7 +14,14 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  logout(){
+  /*
+ Name Of Author : Ketan Pande
+ Function Name : logout()
+ Description : This function will call, When we click on logout icon shown in the header section of the 
+               page. It will trigger the Angular material dialog box and opens the logout component in it.
+              
+*/
+  logout() {
     const dialogConfig = new MatDialogConfig();
     dialogConfig.width = "400px";
     dialogConfig.height = "220px";

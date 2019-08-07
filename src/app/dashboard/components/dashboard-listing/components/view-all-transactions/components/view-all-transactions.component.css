@@ -117,6 +117,24 @@
     border-radius: 2px;
     outline: 0;
 }
+
+
+.spinner_div{
+    text-align: center;
+}
+.spinner-image{
+    /* margin-left: 42%; */
+    width:200px;
+    height:200px;
+    background: url(/assets/images/spinner.gif) 0 0 no-repeat;
+    /* position: absolute; */
+    left: 0;
+    top:0;
+    right: 0;
+    margin:15px auto;
+    display: block;
+  }
+
 .editTip{
     color: red
 }
