@@ -99,6 +99,7 @@ export class NewTransactionComponent implements OnInit, OnDestroy {
   setTransactionInformation() {
     return {
       reference: [''],
+
       customer_number: [''],
       customer_name: [''],
       address: [''],
@@ -220,11 +221,23 @@ export class NewTransactionComponent implements OnInit, OnDestroy {
   Function Name : submitAllTransactionDetails()
   Description : This function is used for submitting all the new transaction related information entered
                 by the user to the REST API. Also, the logic of incrementing the refernce sequence number
-                is done here.           
+                is done here. Storing data in model and then sending it to the API.           
 */
   submitAllTransactionDetails() {
-    let objParams = this.objTransaction.value;
-    this.releaseSubmitSubscription = this.newTransactionService.submitNewTransactionDetails(objParams).subscribe(data => {
+    let customerObj = {
+      customer_number : this.objTransaction.value['customer_number'],
+      customer_name : this.objTransaction.value['customer_name'],
+      phone : this.objTransaction.value['phone'],
+      address : this.objTransaction.value['address'],
+    }
+    this.newtransaction.newTransactionInfo.custermerInfo = customerObj;
+    this.newtransaction.newTransactionInfo.reference = this.objTransaction.value['reference'];
+    this.newtransaction.newTransactionInfo.transfer_amount = this.objTransaction.value['transfer_amount'];
+    this.newtransaction.newTransactionInfo.transfer_currency = this.objTransaction.value['transfer_currency'];
+    this.newtransaction.newTransactionInfo.payment_details = this.objTransaction.value['payment_details'];
+    this.newtransaction.newTransactionInfo.beneficiary_bank = this.objTransaction.value['beneficiary_bank'];
+    this.newtransaction.newTransactionInfo.beneficiary_accno = this.objTransaction.value['beneficiary_accno']
+    this.releaseSubmitSubscription = this.newTransactionService.submitNewTransactionDetails(this.newtransaction.newTransactionInfo).subscribe(data => {
       if (data && 'id' in data) {
         this.sequenceVal = parseInt(this.sequenceVal) + 1;
         console.log("seq", this.sequenceVal);

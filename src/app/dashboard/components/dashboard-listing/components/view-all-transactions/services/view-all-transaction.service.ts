@@ -9,8 +9,7 @@ export class ViewAllTransactionService {
   constructor(private http: HttpClient) { }
 
   public getAllTransactionDetails(): Observable<any> {
-    return this.http.get("https://my-json-server.typicode.com/ketanp-iprogrammer/view-all-transactions/transactions");
-  }
+    return this.http.get("https://my-json-server.typicode.com/ketan-pande/view-all-transactions/transactions");
 
+  }
 }
-	
