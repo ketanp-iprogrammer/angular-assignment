@@ -93,7 +93,7 @@ It will login only when you entered the above mention email on screen, so that i
                     }      
                     
 3. View-All Transaction GET API :
-         URL : https://my-json-server.typicode.com/ketanp-iprogrammer/view-all-transactions/transactions
+         URL : https://my-json-server.typicode.com/ketan-pande/view-all-transactions/transactions
          Response : [
                         {
                           "customer_name": "Ketan",
