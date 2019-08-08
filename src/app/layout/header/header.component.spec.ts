@@ -4,7 +4,7 @@ import { HeaderComponent } from './header.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { By } from '@angular/platform-browser';
 
-fdescribe('HeaderComponent', () => {
+describe('HeaderComponent', () => {
   let component: HeaderComponent;
   let fixture: ComponentFixture<HeaderComponent>;
 
@@ -26,7 +26,7 @@ fdescribe('HeaderComponent', () => {
     expect(component).toBeTruthy();
   });
   
- 
+
 
 
 });

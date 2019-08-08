@@ -2,7 +2,7 @@ import { TestBed, getTestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 
 import { NewTransactionService } from './new-transaction.service';
-import { HttpClient, HttpHandler } from '@angular/common/http';
+// import { HttpClient, HttpHandler } from '@angular/common/http';
 
 describe('NewTransactionService', () => {
   let injector: TestBed;

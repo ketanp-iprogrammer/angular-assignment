@@ -7,7 +7,7 @@ import { ToastrModule, ToastrService } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule, MatSelectModule, MatInputModule } from '@angular/material';
 import {MatCardModule} from '@angular/material/card';
-import { HttpClient, HttpHandler } from '@angular/common/http';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('ViewAllTransactionsComponent', () => {
   let component: ViewAllTransactionsComponent;
@@ -23,13 +23,11 @@ describe('ViewAllTransactionsComponent', () => {
         MatFormFieldModule,
         MatSelectModule,
         MatInputModule,
-        MatCardModule
+        MatCardModule,
+        HttpClientTestingModule
       ],
       declarations: [ ViewAllTransactionsComponent ],
-      providers: [
-        HttpClient,
-        HttpHandler,
-      ],
+     
     })
     .compileComponents();
   }));

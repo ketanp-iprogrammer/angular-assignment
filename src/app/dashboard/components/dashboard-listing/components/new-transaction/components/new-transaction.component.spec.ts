@@ -2,12 +2,13 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NewTransactionComponent } from './new-transaction.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClient, HttpHandler } from '@angular/common/http';
+// import { HttpClient, HttpHandler } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 import { ToastrModule, ToastrService } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule, MatSelectModule, MatInputModule } from '@angular/material';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('NewTransactionComponent', () => {
   let component: NewTransactionComponent;
@@ -24,13 +25,14 @@ describe('NewTransactionComponent', () => {
         BrowserAnimationsModule,
         MatFormFieldModule,
         MatSelectModule,
-        MatInputModule
+        MatInputModule,
+        HttpClientTestingModule
       ],
       declarations: [NewTransactionComponent],
-      providers: [
-        HttpClient,
-        HttpHandler,
-      ],
+      // providers: [
+      //   HttpClient,
+      //   HttpHandler,
+      // ],
     })
       .compileComponents();
   }));

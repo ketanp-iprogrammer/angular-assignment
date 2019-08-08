@@ -1,0 +1,57 @@
+Looking for git in: git
+Using git 1.9.1 from git
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /home/ketanp/finalTest/angular-assignment
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git show :angular.json
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :src/app/dashboard/components/dashboard-listing/components/dashboard-listing.component.spec.ts
+> git show :src/app/dashboard/components/dashboard-listing/components/dashboard-listing.component.html
+> git check-ignore -z --stdin
+> git show :src/app/dashboard/components/dashboard-listing/components/dashboard-listing.component.spec.ts
+> git check-ignore -z --stdin
+> git show :src/app/dashboard/components/dashboard-listing/components/view-all-transactions/services/view-all-transaction.service.ts
+> git show :src/app/dashboard/components/dashboard-listing/components/view-all-transactions/services/view-all-transaction.service.spec.ts
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :src/app/authentication/components/login/login.component.spec.ts
+> git show :src/app/dashboard/components/dashboard-listing/components/dashboard-listing.component.spec.ts
+> git show :src/app/authentication/components/login/login.component.spec.ts
+> git show :src/app/dashboard/components/dashboard-listing/components/view-all-transactions/services/view-all-transaction.service.spec.ts
+> git show :src/app/authentication/components/login/login.component.spec.ts
+> git show :src/app/app.component.spec.ts
+> git show :src/app/app.component.html
+> git show :src/app/app.component.ts
+> git show :src/app/app.component.spec.ts
+> git show :src/app/authentication/components/login/login.component.ts
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :src/app/dashboard/components/dashboard-listing/components/new-transaction/components/new-transaction.component.ts
+> git show :src/app/app.component.spec.ts
+> git show :src/app/dashboard/components/dashboard.component.spec.ts
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :src/app/layout/header/header.component.spec.ts
+> git check-ignore -z --stdin
+> git show :src/app/layout/footer/footer.component.spec.ts
+> git show :src/app/dashboard/components/dashboard-listing/components/new-transaction/components/new-transaction.component.spec.ts
+> git check-ignore -z --stdin
+> git show :src/app/dashboard/components/dashboard-listing/components/new-transaction/services/new-transaction.service.spec.ts
+> git show :src/app/dashboard/components/dashboard-listing/components/new-transaction/components/new-transaction.component.spec.ts
+> git show :src/app/dashboard/components/dashboard-listing/components/view-all-transactions/services/view-all-transaction.service.spec.ts
+> git check-ignore -z --stdin
+> git show :src/app/dashboard/components/dashboard-listing/components/view-all-transactions/components/view-all-transactions.component.spec.ts
