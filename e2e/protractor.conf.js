@@ -16,6 +16,7 @@ exports.config = {
     'browserName': 'chrome'
   },
   directConnect: true,
+  SELENIUM_PROMIMSE_MANAGER: false,
   baseUrl: 'http://localhost:4200/',
   framework: 'jasmine',
   jasmineNodeOpts: {

@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should check title LOG IN', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to angularAssignment!');
+    expect(page.getTitleText()).toEqual('LOG IN');
   });
 
   afterEach(async () => {
