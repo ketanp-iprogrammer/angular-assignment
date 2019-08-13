@@ -9,11 +9,17 @@ Note : This project is done in latest Angular Version i.e Angular 8
 3. npm install
 4. ng serve
 
-* Steps for running test cases : 
+* Steps for running unit test cases : 
 
 1. cd angular-assignment
 2. npm install
 3. ng test
+
+* Steps for running e2e test cases : 
+
+1. cd angular-assignment
+2. npm install
+3. ng e2e
 
 * Points to be taken into consideration 
 
