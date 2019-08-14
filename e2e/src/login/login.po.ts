@@ -9,6 +9,9 @@ export class LoginPage {
     navigateTo() {
         return browser.get('/');
     }
+    navigateToDash() {
+        return browser.get('dashboard');
+    }
 
     fillCredentials(credentias: any = this.credentias) {
         element(by.css('[name="email"]')).sendKeys(credentias.email);
@@ -23,9 +26,6 @@ export class LoginPage {
 
     getErrorMessage() {
         return element(by.css('.invalid-login')).getText();
-    }
-    navigateToDash() {
-        return browser.get('/dashboard/new-transaction');
     }
     getPhoneErrorMessage() {
         return element(by.css('.invalid-login')).getText();

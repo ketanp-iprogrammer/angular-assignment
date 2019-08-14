@@ -12,17 +12,17 @@ const routes: Routes = [
             {
                 path: 'dashboard-listing',
                 loadChildren: '../dashboard/components/dashboard-listing/dashboard-listing.module#DashboardListingModule',
-                canActivate: [AuthGuard]
+                // canActivate: [AuthGuard]
             },
             {
                 path: 'new-transaction',
                 loadChildren: '../dashboard/components/dashboard-listing/components/new-transaction/new-transaction.module#NewTransactionModule',
-                canActivate: [AuthGuard]
+                // canActivate: [AuthGuard]
             },
             {
                 path: 'view-all-transaction',
                 loadChildren: '../dashboard/components/dashboard-listing/components/view-all-transactions/view-all-transactions.module#ViewAllTransactionsModule',
-                canActivate: [AuthGuard]
+                // canActivate: [AuthGuard]
             },
         ]
 

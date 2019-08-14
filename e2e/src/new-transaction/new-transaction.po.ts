@@ -12,11 +12,17 @@ export class NewTransactionPage {
     };
 
     navigateTo() {
-        return browser.get('/dashboard');
+        return browser.get('dashboard-listing/new-transaction');
     }
 
     navigateDefault() {
         return browser.get('/');
+    }
+
+    newTransactionClick() {
+        // setTimeout(() => {
+            element(by.css('.new')).click();
+        // }, 2000);
     }
 
     logout() {

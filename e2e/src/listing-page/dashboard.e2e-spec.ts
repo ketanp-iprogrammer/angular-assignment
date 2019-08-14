@@ -1,12 +1,15 @@
-import { DashboardPage} from '../dashboard-screen/dashboard.po';
+import { DashboardPage } from './dashboard.po';
 import { browser, protractor, element, by } from 'protractor';
+import { logging } from 'protractor';
+import { async } from 'q';
+
 describe('protractor E2E - Dashboard Listing Page', () => {
     let page: DashboardPage;
     beforeEach(() => {
         page = new DashboardPage();
+        // page.navigateTo();
     });
 
-    it('when user goes to dashboard listing page, it will show the options available', () => {
-        page.navigateTotran();
-    });
-});
+       
+   
+})

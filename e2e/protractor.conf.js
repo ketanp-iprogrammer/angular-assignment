@@ -13,7 +13,12 @@ exports.config = {
     './src/**/*.e2e-spec.ts'
   ],
   capabilities: {
-    'browserName': 'chrome'
+    'browserName': 'chrome',
+    chromeOptions: {
+      args: [
+        '--disable-gpu'
+      ]
+    }
   },
   directConnect: true,
   SELENIUM_PROMIMSE_MANAGER: false,

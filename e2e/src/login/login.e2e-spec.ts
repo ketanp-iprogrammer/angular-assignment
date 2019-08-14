@@ -1,9 +1,14 @@
 import { LoginPage } from './login.po';
-// import { NewTransactionPage } from '../new-transaction/new-transaction.po';
-import { browser } from 'protractor';
+import { browser, logging } from 'protractor';
+import { DashboardPage } from '../listing-page/dashboard.po';
+import { NewTransactionPage } from '../new-transaction/new-transaction.po';
+import { ViewAllPage } from '../view-all-transactions/view-all-transaction.po';
+
 describe('protractor-E2E - Login page', () => {
     let page: LoginPage;
-    // let dashboardPage: NewTransactionPage
+    let dashboardPage: DashboardPage;
+    let newTransactionPage: NewTransactionPage;
+    let viewAllTransaction: ViewAllPage
     const wrongCredentias = {
         email: 'wrongname',
         password: 'wrongpasswd'
@@ -21,6 +26,7 @@ describe('protractor-E2E - Login page', () => {
         page = new LoginPage();
     });
 
+
     it('when user trying to login with wrong credentials he should stay on “login” page and see error message', () => {
         page.navigateTo();
         page.fillCredentials(wrongCredentias);
@@ -29,9 +35,33 @@ describe('protractor-E2E - Login page', () => {
     });
 
     it('when login is successful — he should redirect to dashboard page', () => {
-        page.navigateTo();
         page.fillCredentials(correctCredentias);
+        page.navigateToDash();
     });
+
+    it('when user goes to dashboard listing page, it will show the options available', () => {
+        setTimeout(() => {
+            dashboardPage.navigateTotran();
+        }, 2000);
+
+    });
+
+    it('when user clicks on new transaction , it will show the new transaction screen', () => {
+        setTimeout(() => {
+            newTransactionPage.navigateTo();
+            newTransactionPage.newTransactionClick();
+        }, 2000);
+
+    });
+
+    it('when user clicks on view all transaction , it will show the view all transaction screen', () => {
+        setTimeout(() => {
+            viewAllTransaction.viewTransactionClick();
+            viewAllTransaction.navigateTotran();
+        }, 2000);
+
+    });
+
 
 
 });

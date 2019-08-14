@@ -8,4 +8,7 @@ export class ViewAllPage {
         }, 2000);
 
     }
+    viewTransactionClick() {
+        element(by.css('.view')).click();
+    }
 }
