@@ -31,7 +31,7 @@ Note : This project is done in latest Angular Version i.e Angular 8
                        "password": "cityslicka"
                         } 
 
-It will login only when you entered the above mention email on screen, so that it will return the token .
+It will login only when you entered the above mention email on screen, so that it will return the token..
 
 3. I have also used Auth Guard to protect the routes.
 
